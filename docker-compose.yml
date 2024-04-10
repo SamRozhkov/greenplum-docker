@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  gbdb:
+    container_name: gbdb
+    build: .
+    hostname: gpdb
+    ports:
+      - 5123:5123
+    command: "tail -f /dev/null"
